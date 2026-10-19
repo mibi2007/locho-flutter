@@ -1,0 +1,22 @@
+{
+  "name": "flutter-locho-notes-web-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo:hello": "node tool/hello-demo.mjs",
+    "demo:hello:ticket": "node tool/hello-demo.mjs ticket",
+    "demo:hello:stop": "node tool/hello-demo.mjs stop",
+    "prepare:web": "node tool/prepare-web.mjs",
+    "test": "node --test tool/bridge.test.mjs",
+    "test:browser": "playwright test",
+    "test:live": "LOCHO_LIVE=1 LOCHO_FIXTURE_RELAY_HINT=1 playwright test tool/e2e/live.spec.mjs",
+    "test:native": "node tool/native-fixture.mjs"
+  },
+  "dependencies": {
+    "locho_web": "0.1.0-beta.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "esbuild": "0.25.12"
+  }
+}

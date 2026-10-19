@@ -1,0 +1,4 @@
+[[services]]
+name = "hello"
+type = "tcp"
+endpoint = "127.0.0.1:8080"
